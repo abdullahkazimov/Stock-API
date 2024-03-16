@@ -41,6 +41,18 @@ public class Stock {
     }
 
     @Override
+    public String toString() {
+        return "Stock{" +
+                "id=" + id +
+                ", symbol='" + symbol + '\'' +
+                ", price=" + price +
+                ", change=" + change +
+                ", changePercentage=" + changePercentage +
+                ", lastUpdated=" + lastUpdated +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

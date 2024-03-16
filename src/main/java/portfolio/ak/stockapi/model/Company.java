@@ -25,6 +25,16 @@ public class Company {
     }
 
     @Override
+    public String toString() {
+        return "Company{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", industry='" + industry + '\'' +
+                ", stock=" + stock +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
